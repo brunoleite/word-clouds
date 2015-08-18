@@ -1,0 +1,3 @@
+---
+- name: Install "yeoman-node" node.js package globally.
+  npm: name=generator-node global=yes

@@ -1,3 +1,6 @@
 ---
-- name: Install "express" node.js package locally.
-  npm: name=express path=/usr/vagrant/app
+- name: Install npm packages.
+  command: "npm install"  
+  args:
+    chdir: /home/vagrant/app
+  sudo: no

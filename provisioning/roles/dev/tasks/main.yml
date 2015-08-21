@@ -7,9 +7,3 @@
 
 - name: Install "mocha" node.js package globally.
   npm: name=mocha global=yes
-
-- name: Install "sinon" node.js package locally.
-  npm: name=sinon path=/usr/vagrant/app
-
-- name: Install "chai" node.js package locally.
-  npm: name=chai path=/usr/vagrant/app

@@ -1,4 +1,10 @@
 ---
+- name: Install "gulp" package globally.
+  npm: name=gulp global=yes
+
+- name: Install "jspm" package globally.
+  npm: name=jspm@beta global=yes
+
 - name: Install npm packages.
   command: "npm install"  
   args:

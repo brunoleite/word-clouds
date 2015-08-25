@@ -5,5 +5,8 @@
 - name: Install "yeoman-node" node.js package globally.
   npm: name=generator-node global=yes
 
+- name: Install "yeoman-aurelia" package globally.
+  npm: name=generator-aurelia global=yes
+
 - name: Install "mocha" node.js package globally.
   npm: name=mocha global=yes

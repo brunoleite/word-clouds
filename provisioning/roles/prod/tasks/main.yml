@@ -2,11 +2,26 @@
 - name: Install "gulp" package globally.
   npm: name=gulp global=yes
 
-- name: Install "jspm" package globally.
-  npm: name=jspm@beta global=yes
-
-- name: Install npm packages.
+- name: Install npm packages the server side.
   command: "npm install"  
   args:
     chdir: /home/vagrant/app
+  sudo: no
+ 
+- name: Install npm packages for client side.
+  command: "npm install"
+  args:
+    chdir: /home/vagrant/app/client
+  sudo: no
+
+- name: Registry jspm for npm.
+  command: "jspm registry config npm -y"
+  args:
+    chdir: /home/vagrant/app/client
+  sudo: no
+
+- name: Install jspm packages for client side.
+  command: "jspm install -y"
+  args:
+    chdir: /home/vagrant/app/client
   sudo: no

@@ -24,7 +24,7 @@
     "gulp-nsp": "^0.4.5"
   },
   "scripts": {
-    "start": "node server",
+    "start": "node server/server",
     "prepublish": "gulp prepublish",
     "test": "gulp"
   },

@@ -8,4 +8,4 @@ web: jspm config registries.github.maxRepoSize 0
 web: jspm config registries.github.handler jspm-github
 web: jspm install -y
 web: cd ..
-web: npm start
+web: node server/server

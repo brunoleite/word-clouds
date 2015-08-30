@@ -8,4 +8,4 @@ jspm config registries.github.maxRepoSize 0
 jspm config registries.github.handler jspm-github
 jspm install -y
 cd ..
-node start
+npm start

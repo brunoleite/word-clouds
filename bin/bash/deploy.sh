@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -o errexit # Exit on error
+
 npm install -g jspm@beta
 npm install
 cd client

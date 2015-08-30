@@ -3,7 +3,6 @@
 set -o errexit # Exit on error
 
 npm install -g jspm@beta
-npm install
 cd client
 npm install
 jspm config registries.github.remote https://github.jspm.io

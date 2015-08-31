@@ -15,7 +15,12 @@
   sudo: no
 
 - name: Registry jspm for npm.
-  command: "jspm registry config npm -y"
+  command: "{{item}}"
+  with_items: 
+    - jspm config registries.github.remote https://github.jspm.io
+    - jspm config registries.github.auth {{ lookup('env', 'JSPM_GITHUB_AUTH_TOKEN') }}
+    - jspm config registries.github.maxRepoSize 0
+    - jspm config registries.github.handler jspm-github
   args:
     chdir: /home/vagrant/app/client
   sudo: no

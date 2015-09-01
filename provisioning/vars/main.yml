@@ -1,3 +1,5 @@
 ---
 nodejs_forever: true
 workspace: /root
+git_packages:
+  - git

@@ -1,7 +1,4 @@
 ---
-- name: Install "jspm" package globally.
-  npm: name=jspm@beta global=yes
-
 - name: Install "yo" package globally.
   npm: name=yo global=yes
 

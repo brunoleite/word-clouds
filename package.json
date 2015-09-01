@@ -97,7 +97,7 @@
     }
   },
   "scripts": {
-    "start": "node server/server",
+    "start": "node server/server", 
     "prepublish": "gulp prepublish && gulp --gulpfile client/gulpfile.js build",
     "test": "gulp"
   },

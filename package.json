@@ -101,7 +101,7 @@
   },
   "scripts": {
     "start": "node server/server",
-    "postinstall": "gulp --gulpfile client/gulpfile.js buil",
+    "postinstall": "gulp --gulpfile client/gulpfile.js build",
     "prepublish": "gulp prepublish",
     "test": "gulp"
   },

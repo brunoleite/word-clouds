@@ -100,8 +100,9 @@
     }
   },
   "scripts": {
-    "start": "node server/server", 
-    "prepublish": "echo prepublish && gulp prepublish && gulp --gulpfile client/gulpfile.js build",
+    "start": "node server/server",
+    "postinstall": "gulp --gulpfile client/gulpfile.js buil",
+    "prepublish": "gulp prepublish",
     "test": "gulp"
   },
   "license": "MIT"

@@ -1,5 +1,6 @@
 ---
-nodejs_forever: true
+nodejs_version: "0.12.7"
+nodejs_install_method: "source"
 workspace: /root
 git_packages:
   - git

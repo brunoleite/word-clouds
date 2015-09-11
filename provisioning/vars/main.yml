@@ -1,6 +1,19 @@
 ---
-nodejs_version: "0.12.7"
-nodejs_install_method: "source"
+nodejs_forever: true
+nodejs_version: "0.12"
+nodejs_npm_global_packages:
+  # Install "yo".
+  - name: yo
+  # Install "yeoman-node".
+  - name: generator-node
+  # Install "yeoman-aurelia".
+  - name: generator-aurelia
+  # Install "jspm".
+  - name: jspm
+  # Install "mocha".
+  - name: mocha
+  # Install "gulp".
+  - name: gulp
 workspace: /root
 git_packages:
   - git

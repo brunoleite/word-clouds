@@ -1,2 +1,2 @@
 geerlingguy.git
-ANXS.nodejs
+geerlingguy.nodejs

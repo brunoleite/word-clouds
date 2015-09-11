@@ -8,6 +8,6 @@
 
   roles:
    - geerlingguy.git
-   - ANXS.nodejs
+   - geerlingguy.nodejs
    - dev
    - prod

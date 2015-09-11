@@ -1,9 +1,6 @@
 ---
-- name: Install "yo" package globally.
-  npm: name=yo global=yes
-
-- name: Install "jspm" package globally.
-  npm: name=jspm@beta global=yes
+- name: Install source code compilation tools
+  apt: name=build-essential state=present
 
 - name: Registry jspm for npm.
   command: "jspm config registries.github.auth {{ lookup('env', 'JSPM_GITHUB_AUTH_TOKEN') }}"
@@ -16,12 +13,3 @@
   args:
     chdir: /home/vagrant/app/client
   sudo: no
-
-- name: Install "yeoman-node" node.js package globally.
-  npm: name=generator-node global=yes
-
-- name: Install "yeoman-aurelia" package globally.
-  npm: name=generator-aurelia global=yes
-
-- name: Install "mocha" node.js package globally.
-  npm: name=mocha global=yes

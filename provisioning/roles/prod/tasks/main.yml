@@ -1,11 +1,6 @@
 ---
-- name: Install "gulp" package globally.
-  npm: name=gulp global=yes
-
 - name: Install npm packages the server side.
   command: "npm install"  
   args:
     chdir: /home/vagrant/app
   sudo: no
-  environment: 
-    JSPM_GITHUB_AUTH_TOKEN: "{{ lookup('env', 'JSPM_GITHUB_AUTH_TOKEN') }}"

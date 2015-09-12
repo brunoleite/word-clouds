@@ -23,7 +23,7 @@ git clone git@github.com:brunoleite/word-clouds.git
 
 - Go to /word-clouds:
 ```
-cd word=clouds
+cd word-clouds
 ```
 
 - Install required Ansible roles: 

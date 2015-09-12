@@ -1,7 +1,7 @@
 # word-clouds
 ## Synopsis
 
-This is a project to process text, in English and Portugues, and generates word clouds.
+This is a project to process text, in English and Portuguese, and generates word clouds.
 
 ## Motivation
 

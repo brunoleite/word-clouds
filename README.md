@@ -31,9 +31,9 @@ cd word-clouds
 ansible-galaxy install -r requirements.txt
 ```
 
-- Create a Vagrat machine (it may take a while): 
+- Create a Vagrant machine (it may take a while): 
 ```
-Vagrant up
+vagrant up
 ```
 
 ## Tests

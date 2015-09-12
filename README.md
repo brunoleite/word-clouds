@@ -16,7 +16,25 @@ Another motivation was to study JavaScript (Nodejs, Aurelia and D3), Continous I
 * [ansible](http://www.ansible.com/) - 1.9.3 or higher
 
 ### Setup
+- Clone this repository to your local drive:
+```
+git clone git@github.com:brunoleite/word-clouds.git
+```
 
+- Go to /word-clouds:
+```
+cd word=clouds
+```
+
+- Install required Ansible roles: 
+```
+ansible-galaxy install -r requirements.txt
+```
+
+- Create a Vagrat machine (it may take a while): 
+```
+Vagrant up
+```
 
 ## Tests
 

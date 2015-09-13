@@ -14,6 +14,8 @@ nodejs_npm_global_packages:
   - name: mocha
   # Install "gulp".
   - name: gulp
+  # Install "karma".
+  - name: karma-cli
 workspace: /root
 git_packages:
   - git

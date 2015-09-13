@@ -1,5 +1,4 @@
 # word-clouds
-## Synopsis
 
 This is a project to process text, in English and Portuguese, and generates word clouds.
 
@@ -14,6 +13,7 @@ Another motivation was to study JavaScript (Nodejs, Aurelia and D3), Continous I
 * [VirtualBox](https://www.virtualbox.org/wiki/Download_Old_Builds_4_3) - 4.3.30
 * [Vagrant](https://www.vagrantup.com/downloads.html) - 1.7.4 or higher
 * [ansible](http://www.ansible.com/) - 1.9.3 or higher
+* Configures the environment variable JSPM_GITHUB_AUTH_TOKEN with a [github personal access token](https://github.com/settings/tokens)(don't forget to mark access to repos). The token needs to be [encoded using Base64](https://www.base64encode.org/). The project uses [jspm](http://jspm.io/) which needs to access github, because it this configuration is required.
 
 ### Setup
 - Clone this repository to your local drive:
@@ -36,6 +36,22 @@ ansible-galaxy install -r requirements.txt
 vagrant up
 ```
 
+- Access the virtual machine:
+```
+vagrant ssh
+```
+
+- Go to /app:
+```
+cd app
+```
+
+- Run the app:
+```
+npm start
+```
+
+The app should be available in `localhost:8000`, accessed from your local machine.
 ## Tests
 
 Describe and show how to run the tests with code examples.

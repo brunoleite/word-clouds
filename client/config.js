@@ -44,6 +44,7 @@ System.config({
     "clean-css": "npm:clean-css@3.3.8",
     "core-js": "npm:core-js@0.9.18",
     "css": "github:systemjs/plugin-css@0.1.13",
+    "d3-cloud": "npm:d3-cloud@1.2.0",
     "fetch": "github:github/fetch@0.9.0",
     "font-awesome": "npm:font-awesome@4.4.0",
     "traceur": "github:jmcriffey/bower-traceur@0.0.91",
@@ -251,6 +252,9 @@ System.config({
     },
     "npm:core-util-is@1.0.1": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"
+    },
+    "npm:d3-cloud@1.2.0": {
+      "d3-dispatch": "npm:d3-dispatch@0.2.1"
     },
     "npm:font-awesome@4.4.0": {
       "css": "github:systemjs/plugin-css@0.1.13"

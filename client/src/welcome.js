@@ -8,6 +8,7 @@ export class Welcome {
   heading = 'word clouds';
   englishText = '';
   portugueseText = '';
+  words = [];
 
   constructor(http) {
     this.http = http;
@@ -16,9 +17,8 @@ export class Welcome {
   submit(){
     this.http
       .post('/word-clouds', {englishText: this.englishText, portugueseText: this.portugueseText})
-      .send()
-      .then(function() {
-        alert('haha');
+      .then(httpResponse => {
+        this.words = httpResponse.response;
       });
   }
 

@@ -7,17 +7,17 @@ describe('it counts', function () {
   it('single word', function () {
     var sentence = 'Sentence';
     var temp = wordClouds(sentence);
-    expect(temp).to.deep.include.members([{ word: 'Sentence', size: 1 }]);
+    expect(temp).to.deep.include.members([{ word: 'SENTENCE', size: 1 }]);
   });
 
   it('multiple words', function () {
     var sentence = 'This is a sentence';
     var temp = wordClouds(sentence);
     expect(temp).to.deep.include.members([
-    	{ word: 'This', size: 1 }, 
-    	{ word: 'is', size: 1 }, 
-    	{ word: 'a', size: 1 }, 
-    	{ word: 'sentence', size: 1 }
+    	{ word: 'THIS', size: 1 }, 
+    	{ word: 'IS', size: 1 }, 
+    	{ word: 'A', size: 1 }, 
+    	{ word: 'SENTENCE', size: 1 }
     ]);
   });
 
@@ -25,10 +25,10 @@ describe('it counts', function () {
     var sentence = 'This! is, a? sentence...';
     var temp = wordClouds(sentence);
     expect(temp).to.deep.include.members([
-    	{ word: 'This', size: 1 }, 
-    	{ word: 'is', size: 1 }, 
-    	{ word: 'a', size: 1 }, 
-    	{ word: 'sentence', size: 1 }
+    	{ word: 'THIS', size: 1 }, 
+    	{ word: 'IS', size: 1 }, 
+    	{ word: 'A', size: 1 }, 
+    	{ word: 'SENTENCE', size: 1 }
     ]);
   });
 
@@ -36,10 +36,21 @@ describe('it counts', function () {
     var sentence = 'This Is A Sentence';
     var temp = wordClouds(sentence);
     expect(temp).to.deep.include.members([
-    	{ word: 'This', size: 1 }, 
-    	{ word: 'Is', size: 1 }, 
+    	{ word: 'THIS', size: 1 }, 
+    	{ word: 'IS', size: 1 }, 
     	{ word: 'A', size: 1 }, 
-    	{ word: 'Sentence', size: 1 }
+    	{ word: 'SENTENCE', size: 1 }
+    ]);
+  });
+
+  it('words with partional upper case', function () {
+    var sentence = 'This Is A SENtence';
+    var temp = wordClouds(sentence);
+    expect(temp).to.deep.include.members([
+    	{ word: 'THIS', size: 1 }, 
+    	{ word: 'IS', size: 1 }, 
+    	{ word: 'A', size: 1 }, 
+    	{ word: 'SENTENCE', size: 1 }
     ]);
   });
 

@@ -7,17 +7,17 @@ describe('it counts', function () {
   it('single word', function () {
     var sentence = 'Sentence';
     var temp = wordClouds(sentence);
-    expect(temp).to.deep.include.members([{ text: 'SENTENCE', size: 1 }]);
+    expect(temp).to.deep.include.members([{ text: 'SENTENCE', size: 100 }]);
   });
 
   it('multiple words', function () {
     var sentence = 'This is a sentence';
     var temp = wordClouds(sentence);
     expect(temp).to.deep.include.members([
-    	{ text: 'THIS', size: 1 }, 
-    	{ text: 'IS', size: 1 }, 
-    	{ text: 'A', size: 1 }, 
-    	{ text: 'SENTENCE', size: 1 }
+    	{ text: 'THIS', size: 100 }, 
+    	{ text: 'IS', size: 100 }, 
+    	{ text: 'A', size: 100 }, 
+    	{ text: 'SENTENCE', size: 100 }
     ]);
   });
 
@@ -25,10 +25,10 @@ describe('it counts', function () {
     var sentence = 'This! is, a? sentence...';
     var temp = wordClouds(sentence);
     expect(temp).to.deep.include.members([
-    	{ text: 'THIS', size: 1 }, 
-    	{ text: 'IS', size: 1 }, 
-    	{ text: 'A', size: 1 }, 
-    	{ text: 'SENTENCE', size: 1 }
+    	{ text: 'THIS', size: 100 }, 
+    	{ text: 'IS', size: 100 }, 
+    	{ text: 'A', size: 100 }, 
+    	{ text: 'SENTENCE', size: 100 }
     ]);
   });
 
@@ -36,10 +36,10 @@ describe('it counts', function () {
     var sentence = 'This Is A Sentence';
     var temp = wordClouds(sentence);
     expect(temp).to.deep.include.members([
-    	{ text: 'THIS', size: 1 }, 
-    	{ text: 'IS', size: 1 }, 
-    	{ text: 'A', size: 1 }, 
-    	{ text: 'SENTENCE', size: 1 }
+    	{ text: 'THIS', size: 100 }, 
+    	{ text: 'IS', size: 100 }, 
+    	{ text: 'A', size: 100 }, 
+    	{ text: 'SENTENCE', size: 100 }
     ]);
   });
 
@@ -47,10 +47,10 @@ describe('it counts', function () {
     var sentence = 'This Is A SENtence';
     var temp = wordClouds(sentence);
     expect(temp).to.deep.include.members([
-    	{ text: 'THIS', size: 1 }, 
-    	{ text: 'IS', size: 1 }, 
-    	{ text: 'A', size: 1 }, 
-    	{ text: 'SENTENCE', size: 1 }
+    	{ text: 'THIS', size: 100 }, 
+    	{ text: 'IS', size: 100 }, 
+    	{ text: 'A', size: 100 }, 
+    	{ text: 'SENTENCE', size: 100 }
     ]);
   });
 

@@ -44,6 +44,7 @@ System.config({
     "clean-css": "npm:clean-css@3.3.8",
     "core-js": "npm:core-js@0.9.18",
     "css": "github:systemjs/plugin-css@0.1.13",
+    "d3": "npm:d3@3.5.6",
     "d3-cloud": "npm:d3-cloud@1.2.0",
     "fetch": "github:github/fetch@0.9.0",
     "font-awesome": "npm:font-awesome@4.4.0",

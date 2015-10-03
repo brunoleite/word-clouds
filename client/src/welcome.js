@@ -50,7 +50,7 @@ export class Welcome {
         } 
         
         var layout = cloud()
-            .size([500, 500])
+            .size([960, 600])
             .words(this.words)
             .padding(5)
             .rotate(function() { return ~~(Math.random() * 2) * 90; })

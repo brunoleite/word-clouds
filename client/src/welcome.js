@@ -24,6 +24,11 @@ export class Welcome {
         
         var fill = d3.scale.category20();
 
+        var maxSize = d3.max(this.words, function(d) { return d.size; });
+        var minSize = d3.min(this.words, function(d) { return d.size; });
+
+        var fontScale = d3.scale.linear().domain([minSize, maxSize]).range([20,150]);
+
         var draw = function (words) {
           d3.select("#cloud > svg").remove();
           d3.select("#cloud").append("svg")
@@ -50,7 +55,7 @@ export class Welcome {
             .padding(5)
             .rotate(function() { return ~~(Math.random() * 2) * 90; })
             .font("Impact")
-            .fontSize(function(d) { return d.size; })
+            .fontSize(function(d) { return fontScale(d.size); })
             .on("end", draw)
 
         layout.start();    

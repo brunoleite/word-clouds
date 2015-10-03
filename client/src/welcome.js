@@ -52,7 +52,7 @@ export class Welcome {
         var layout = cloud()
             .size([960, 600])
             .words(this.words)
-            .padding(5)
+            .padding(0)
             .rotate(function() { return ~~(Math.random() * 2) * 90; })
             .font("Impact")
             .fontSize(function(d) { return fontScale(d.size); })

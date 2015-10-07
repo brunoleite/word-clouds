@@ -8,8 +8,9 @@ app.use(express.static('client'));
 app.use(bodyParser.json());
 
 app.post('/word-clouds', function(request, response) {
-	var text = request.body.englishText;
-	response.send(wordClouds(text));
+	var englishText = request.body.englishText;
+	var portugueseText = request.body.portugueseText;
+	response.send(wordClouds(englishText, portugueseText));
 });
 
 var server = app.listen(port, function () {

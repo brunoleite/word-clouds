@@ -27,7 +27,7 @@ export class Welcome {
         var maxSize = d3.max(this.words, function(d) { return d.size; });
         var minSize = d3.min(this.words, function(d) { return d.size; });
 
-        var fontScale = d3.scale.linear().domain([minSize, maxSize]).range([20,150]);
+        var fontScale = d3.scale.linear().domain([minSize, maxSize]).range([20,130]);
 
         var draw = function (words) {
           d3.select("#cloud > svg").remove();
@@ -50,7 +50,7 @@ export class Welcome {
         } 
         
         var layout = cloud()
-            .size([960, 600])
+            .size([window.innerWidth - 30, 600])
             .words(this.words)
             .padding(0)
             .rotate(function() { return ~~(Math.random() * 2) * 90; })
